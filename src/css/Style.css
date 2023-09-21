@@ -1,0 +1,595 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+}
+
+p {
+    color: #000;
+    font-size: 16px;
+}
+
+ol {
+    color: #000;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.status-panel ol li {
+    line-height: 26px;
+}
+
+body {
+    color: #000;
+}
+
+body.frame-body {
+    background: #e5e5e5;
+    position: relative;
+    overflow: hidden !Important;
+    font-family: sans-serif;
+}
+
+.logo img {
+    width: 250px;
+}
+
+.frame-app {
+    height: auto;
+    background: #fff;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+.frame-app::-webkit-scrollbar-thumb {
+    background: #e1251b;
+}
+
+.frame-app::-webkit-scrollbar-track {
+    background: #f0f0f000;
+}
+
+.frame-app::-webkit-scrollbar {
+    width: 2px;
+}
+
+.logo {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.date-time p span {
+    color: #e1251b;
+}
+
+.date-time {
+    text-align: center;
+    padding-top: 18px;
+    width: 100%;
+    float: left;
+}
+
+.date-time p {
+    font-size: 15px;
+    color: #22292e;
+}
+
+.app-heading {
+    text-align: center;
+    padding-top: 28px;
+    width: 100%;
+    float: left;
+}
+
+.app-heading h1 {
+    color: #2f2e2e;
+    font-size: 27px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.app-menu ul {
+    padding-bottom: 7px;
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    cursor: grab;
+    overflow-y: hidden;
+    justify-content: center;
+}
+
+.app-menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #979797;
+    font-family: sans-serif;
+    font-size: 17px;
+    padding-bottom: 7px;
+}
+
+.app-menu ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+.app-menu {
+    width: 100%;
+    padding-top: 38px;
+}
+
+.app-menu ul li.active a {
+    border-bottom: 2px solid #e1251b;
+    color: #e1251b;
+}
+
+a.active_class {
+    border-bottom: 2px solid #e1251b;
+    color: #e1251b !important;
+}
+
+.tank-temprature-heading h2 {
+    text-transform: uppercase;
+    color: #2f2e2e;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+.tank-temprature-heading {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+
+.temperature-count {
+    width: 100%;
+    float: left;
+    display: flex;
+}
+
+.f_count {
+    border-right: 1px solid #e5e5e5;
+}
+
+.common_count h1 sup {
+    font-size: 20px;
+}
+
+.common_count h1 {
+    font-size: 70px;
+    font-family: sans-serif;
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.common_count {
+    width: 50%;
+    text-align: center;
+}
+
+.common_count h1 sup span {
+    font-size: 30px;
+    color: red;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.common_count h1 sup {
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+    font-family: sans-serif;
+    /* display: flex; */
+    right: -5px;
+}
+
+.app-status {
+    width: 100%;
+    float: left;
+    padding-top: 20px;
+    padding-left: 19px;
+}
+
+.app-status h3 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #2f2e2e;
+    text-align: left;
+}
+
+.app-mode-box .box-mode span {
+    color: #e1251b;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding-top: 10px;
+    float: left;
+    text-transform: uppercase;
+}
+
+.app-mode-box .box-mode p {
+    color: #2f2e2e;
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 23px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.app-mode-box .box-1 {
+    margin-right: 22px;
+}
+
+.app-mode-box .box-mode {
+    width: 100%;
+    float: left;
+    padding: 16px;
+    background: #d9d9d966;
+    border-radius: 3px;
+    margin-bottom: 0px;
+    height: 81px;
+}
+
+.app-mode-box {
+    padding: 19px 19px 0px 19px;
+    float: left;
+    width: 100%;
+    /* display: flex; */
+    box-sizing: border-box;
+}
+
+li.slide.selected .box-mode {
+    width: 45%;
+    float: left;
+}
+
+.carousel .control-dots .dot {
+    background: #e3453c;
+    box-shadow: none;
+}
+
+section.out-body {
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+    position: relative;
+}
+
+.bottom-button {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.app-button {
+    padding: 10px 20px;
+    background: 0 0;
+    border: 1px solid #e1251b;
+    color: #e1251b;
+    outline: 0;
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 0px 15px;
+}
+
+.red-color-bar {
+    width: 100%;
+    float: left;
+    margin: 20px 0px;
+}
+
+.red-color-bar line {
+    width: 90%;
+    height: 2px;
+    background: #e1251b;
+    float: none;
+    margin: 0px auto;
+    display: block;
+}
+
+.app-heading h6 span {
+    color: #e1251b;
+}
+
+.app-heading h6 {
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+.tank-temprature-heading span a {
+    text-decoration: none;
+    color: #e22b22;
+    padding: 4px;
+}
+
+.tank-temprature-heading span {
+    margin: 0px 20px;
+}
+
+.temprature_status {
+    width: 100%;
+    float: left;
+    padding: 0px 19px;
+    font-family: sans-serif;
+    display: block;
+    box-sizing: border-box;
+}
+
+.temprature_status h4 {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #000;
+    text-align: left;
+}
+
+.temprature_status h6 {
+    font-size: 16px;
+    color: #e74e46;
+    margin-top: 13px;
+    text-align: left;
+}
+
+.status-panel {
+    /* border-bottom: 1px solid #ddd; */
+    margin-bottom: 10px;
+    padding: 10px 1px;
+    width: 100%;
+    float: left;
+}
+
+.ip_panel {
+    background: #ffe5e3;
+}
+
+.week-status ul li {
+    line-height: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.week-status ul {
+    width: 50%;
+    float: left;
+}
+
+.week-status {
+    width: 100%;
+    float: left;
+    padding: 0px 0 px;
+    box-sizing: border-box;
+}
+
+.week-status ul li input {
+    margin-right: 10px;
+}
+
+.week-status ul li {
+    line-height: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 16px;
+}
+
+.status-panel figure input[type=radio] {
+    margin-right: 10px;
+}
+
+.status-panel figure {
+    padding: 5px 1px;
+    font-size: 15px;
+    display: flex;
+    line-height: 20px;
+    align-items: center;
+    color: #000;
+    font-size: 15px;
+    text-align: left;
+}
+
+.status-panel p {
+    color: #000;
+    font-size: 16px;
+}
+
+.status-panel h3 {
+    color: #000;
+    font-size: 20px;
+    text-align: left;
+}
+
+.one_box {
+    margin-right: 0px !important;
+}
+
+.temprature_status p {
+    width: 100%;
+    float: left;
+    padding: 5px 0px;
+    text-align: left;
+}
+
+.value-box {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 10px 10px;
+    outline: none;
+    color: #000;
+    width: 50%;
+}
+
+.value-box:focus {
+    border-color: #e22b22;
+}
+
+.value-box-panel .value-box:first-child {
+    margin-left: 0px !important;
+}
+
+.status-panel .value-box {
+    margin-left: 0px !important;
+    float: left;
+}
+
+.value-box-panel {
+    width: 100%;
+    float: left;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.arrow_left {
+    background: none;
+    border: none;
+    width: 30px;
+    color: red;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.copyright {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.copyright h6 {
+    font-size: 16px;
+    color: #000;
+}
+
+.copyright h6 span {
+    color: #ff0000;
+}
+
+#header-search {
+    padding: 10px;
+    outline: none;
+    margin: 10px 0px;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.user_wrap {
+    padding: 0px 30px;
+}
+
+.prductItem button {
+    margin-left: 30px;
+    padding: 10px;
+    border: none;
+    background: red;
+    color: #fff;
+    border-radius: 7px;
+}
+
+.prductItem img {
+    width: 100px;
+}
+
+.prductItem {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ebdada;
+    width: fit-content;
+    padding: 10px;
+    width: 100%;
+}
+
+.productListing {
+    display: block;
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 40px;
+}
+
+.myCart {
+    text-align: right;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.myCart h5 {
+    font-size: 20px;
+    display: block;
+}
+
+
+/**************Mobile responsive********************/
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    section.out-body {
+        padding: 0px 0;
+    }
+    .frame-app {
+        height: 100vh;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .app-mode-box .box-mode p {
+        font-size: 17px;
+    }
+    .common_count h1 sup {
+        font-size: 20px;
+        right: 0px;
+    }
+    .app-menu ul li {
+        display: inline-block;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .app-menu ul li a {
+        font-size: 15px;
+    }
+}
+
+
+/**********************laptop*************************/
+
+@media screen and (min-width: 1025px) and (max-width: 1500px) {
+    .frame-app {
+        height: 95vh;
+        width: 38.642857vw;
+    }
+}
