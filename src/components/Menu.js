@@ -11,7 +11,7 @@ export default function Menu() {
 		  {/* Menu Bar */}
 			<ul className="app-menu-list">				
 				<li ><NavLink exact activeClassName="active_class" to="/">Products Main </NavLink></li>		
-				<li ><NavLink exact activeClassName="active_class" to="/programs">Programs </NavLink></li>		
+				<li ><NavLink exact activeClassName="active_class" to="/programs">Programs update2 </NavLink></li>		
 				<li ><NavLink exact activeClassName="active_class" to="/config">Config  </NavLink></li>		
 				<li ><NavLink exact activeClassName="active_class" to="/time">Time  </NavLink></li>		
 				<li ><NavLink exact activeClassName="active_class" to="/maint">Maint  </NavLink></li>
