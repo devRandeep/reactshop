@@ -18,10 +18,10 @@ export default function Menu() {
 				<li ><NavLink exact activeClassName="active_class" to="/alarms">Alarms   </NavLink></li>	
 				<li><NavLink exact activeClassName="active_class" to="/ioconfig">I/O Config   </NavLink></li>
 				<li><NavLink exact activeClassName="active_class" to="/users">Counter  </NavLink></li>
-				<li><NavLink exact activeClassName="active_class" to="/api">Api  </NavLink></li>			
+				<li><NavLink exact activeClassName="active_class" to="/api">Student Api  </NavLink></li>			
 				</ul>	
 		</div>
 		 {/* Menu Bar */}
     </>
   );
-}
+}	
